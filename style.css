@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Goldman&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, rgb(241, 241, 155), green, rgb(94, 94, 3));
+    padding: 15px 0px;
+}
+
+.header h1{
+    color: black;
+    font-size: 30px;
+    padding: 5px 20px;
+    font-weight: bold;
+    font-family: 'Goldman', cursive;
+}
+.header h3{
+    color: black;
+    font-size: 20px;
+    /* padding: 5px 25px; */
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+.btn{
+    background: none;
+    border: 2px solid white;
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.btn-d{
+    background-color: rgb(252, 246, 246);
+    border: none;
+    font-size: 15px;
+    padding: 5px 20px;
+    margin: 0px 10px;
+    color: red;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.btn-d:hover{
+    background-color: rgb(216, 209, 209);
+}
+.navigation{
+    margin: 10px 20px;
+    background-color: white;
+}
+.navigation ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    list-style: none;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin: 0px 20px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.4s ease-out;
+}
+.nav a:hover{    
+    border-bottom: 7px solid green;
+    color: green;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 93px;
+    height: 85px;
+    padding-left: 25px;
+}
