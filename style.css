@@ -3,13 +3,22 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* navigation */
+.navbar{
+    position: sticky;
+    top: 0px;
 }
 .nav-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(to right, rgb(241, 241, 155), green, rgb(94, 94, 3));
+    background-image: linear-gradient(to right, yellow, orange);
     padding: 15px 0px;
+    position: sticky;
+    top: 0px;
 }
 
 .header h1{
@@ -17,22 +26,21 @@
     font-size: 30px;
     padding: 5px 20px;
     font-weight: bold;
-    font-family: 'Goldman', cursive;
+    font-family: 'Berlin Sans FB', 'cursive';
 }
 .header h3{
     color: black;
     font-size: 20px;
-    /* padding: 5px 25px; */
     text-align: center;
-    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-family: 'Century Gothic', 'cursive';
 }
 .btn{
     background: none;
-    border: 2px solid white;
+    border: 2px solid black;
     font-size: 15px;
     padding: 5px 10px;
     margin: 0px 10px;
-    color: white;
+    color: black;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
 }
@@ -54,12 +62,13 @@
     background-color: rgb(216, 209, 209);
 }
 .navigation{
-    margin: 10px 20px;
     background-color: white;
+    box-shadow: 2px 2px grey;
 }
 .navigation ul{
     display: flex;
     justify-content: space-between;
+    padding: 16px 20px;
 }
 
 .nav{
@@ -74,8 +83,12 @@
     transition: all 0.4s ease-out;
 }
 .nav a:hover{    
-    border-bottom: 7px solid green;
-    color: green;
+    border-bottom: 7px solid orange;
+    color: rgb(124, 84, 8);
+}
+.active a{
+    border-bottom: 7px solid orange;
+    color: rgb(124, 84, 8);
 }
 .logo{
     display: flex;
@@ -84,4 +97,84 @@
     width: 93px;
     height: 85px;
     padding-left: 25px;
+}
+/* what we do section */
+.image-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-part img{
+    width: 97vw;
+    height: 700px;
+    margin: auto;
+    z-index: -1;
+}
+/* root part  */
+.root{
+    background-color: white;
+    width: 80vw;
+    margin: -30px auto;
+    box-shadow: 2px 2px 2px 2px rgb(156, 156, 156);
+}
+.root h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 42px;
+    padding-top: 10px;
+    text-align: center;
+}
+.root p{
+    font-family: 'PT Serif', sans-serif;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+/* paragraph part */
+.para{
+    width: 50vw;
+    margin: 70px auto;
+}
+.para p{
+    text-align: center;
+    font-size: 19px;
+    line-height: 30px;
+}
+/* part containers */
+.part1-container{
+    background-color: rgb(199, 197, 197);
+}
+.part1{
+    width: 80%;
+    margin: auto;
+}
+.part1 img{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+.part1 h1{
+    text-align: center;
+    font-size: 34px;
+    padding: 20px 0px;
+}
+.part1 h3{
+    font-size: 34px;
+    text-align: center;
+    padding: 20px 0px;
+}
+.part1 p{
+    font-size: 19px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.link-container{
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    text-decoration: none;
+    font-size: 19px;
+    color: blue;
 }
