@@ -142,7 +142,10 @@
 }
 /* part containers */
 .part1-container{
-    background-color: rgb(199, 197, 197);
+    background-color: rgb(223, 219, 219);
+}
+.part2-container{
+    background-color: white;
 }
 .part1{
     width: 80%;
@@ -157,7 +160,8 @@
 .part1 h1{
     text-align: center;
     font-size: 34px;
-    padding: 20px 0px;
+    padding-top: 70px;
+    padding-bottom: 20px;
 }
 .part1 h3{
     font-size: 34px;
@@ -170,11 +174,18 @@
     padding-bottom: 30px;
 }
 .link-container{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .link{
     text-decoration: none;
     font-size: 19px;
     color: blue;
+    margin-bottom: 30px;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.hide{
+    visibility: hidden;
 }
